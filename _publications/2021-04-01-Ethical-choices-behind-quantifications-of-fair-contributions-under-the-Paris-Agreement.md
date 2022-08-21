@@ -2,7 +2,7 @@
 title: "Ethical choices behind quantifications of fair contributions under the Paris Agreement"
 collection: publications
 permalink: /publication/2021-04-01-Ethical-choices-behind-quantifications-of-fair-contributions-under-the-Paris-Agreement
-excerpt: 'Bandiera\_abtest: a Cg\_type: Nature Research Journals Number: 4 Primary\_atype: Reviews Publisher: Nature Publishing Group Subject\_term: Decision making;Ethics Subject\_term\_id: decision-making;ethics'
+excerpt:
 date: 2021-04-01
 venue: 'Nature Climate Change'
 paperurl: 'https://www.nature.com/articles/s41558-021-01015-8'
