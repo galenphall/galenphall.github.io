@@ -1,0 +1,17 @@
+---
+title: 'Review: Johann Hari, _Stolen Focus_'
+date: 2022-08-22
+permalink: /posts/2022/08/stolen_focus/
+tags:
+  - attention
+  - social media
+  - big tech
+  - distraction
+  - attention
+---
+
+By now it is generally accepted -- if not always explicitly -- that the coronavirus has become a permanent fixture of human life. One sees relatively little public discussion of what this might mean in the long run. Perhaps public health officials and pharmaceutical companies quietly expect to manufacture new vaccines indefinitely amidst intermittent waves of lockdown, or expect that genetic drift and evolution will render less and less deadly variants, or simply aren't thinking beyond a six-month horizon. Whatever conversations may or may not be going on in CDC hallways and Pfizer office towers, it seems that COVID has become endemic. Let's imagine one plausible future. The disease could settle at a genotype combining high virulence, harsh symptoms including long COVID, and a low mortality rate. Without mass death spurring strong public health measures the virus would circulate continuously. Vaccine development would look something like it does for the flu, with relatively effective yearly vaccines which fail to reach large fractions of the public each year. Since COVID has a high incidence of short term reinfection, people of all ages could contract it several times a year. We would come to view it as something of an ever-present nuisance, like a stronger common cold. As it spread, more and more people would suffer silently under long COVID: brain fog, occasional heart dysfunction, moderate asthma symptoms. It would not be out of the ordinary to spend one or several months out of a given year in this diminished-yet-still-functional state, and many people would carry weaker versions of such symptoms more or less indefinitely.
+
+Now imagine a child born into this world (and she might just have been). For her the recurrent brain fog and breathing problems are a fact of life, like seasonal allergies. She may be distraught when as a young child she finds herself unable to keep up with her friends after a particularly severe bout, but by adolescence she feels no more anguish over her recurring symptoms than she does over the fact that she cannot levitate or see through walls. Years on, as a young woman, she volunteers for a third-stage clinical trial of a drug designed to permanently vaccinate against all COVID variants. As part of the treatment she must live for several months in relative isolation, surrounded only by other uninfected individuals; but in return, she stays completely free of the virus. Not only that, but the medicine undoes all the accumulated effects of her prior illnesses. Imagine the clouds of disease slowly parting. Feel her growing elation as, a few weeks into treatment, she senses a weight lift from her lungs and a fog evaporate from her body, both of which she had long forgotten existed. An entire level of human capacity opens to her which she only dimly knew existed. She can focus for longer, run farther, achieve more. She returns to daily life and finds herself more present with her friends, and mentally sharper. Eventually she cannot imagine ever living again as she once did. 
+
+I imagine Johann Hari undergoing a similar sort of spiritual convalesence by the end of his three month summer stay in Provincetown. 
