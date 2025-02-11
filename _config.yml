@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Galen Hall"
   avatar           : "portrait.png"
-  bio              : "Climate politics researcher in the Climate and Development Lab @ Brown University. Incoming Sociology PhD at the University of Michigan starting 2023."
+  bio              : "Physics and Sociology joint PhD student at the University of Michigan."
   location         : "New York, NY"
-  employer         : "Brown University"
+  employer         : "University of Michigan"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YLZ5w-cAAAAJ&hl=en"
-  email            : "galen_hall [at] brown.edu"
+  email            : "galen_hall [at] umich.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

@@ -11,43 +11,73 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Physics, Brown University, 2020
-  * Year-long study abroad at Oxford University in Physics and Philosophy, 2018-2019
+* Ph.D. in Physics and Sociology (Joint), University of Michigan, Ann Arbor, 2023-Present
+  * Pre-candidate for Ph.D.
+  * GPA: 4.0
+  * Courses: Social Theory 1 & 2, Social Demography, Economic Sociology, Intro. to Adaptive Systems, Network Science, Econometrics 1 & 2
+
+* Sc.B. in Physics (Honors), Brown University, 2016-2020
+  * GPA: 3.93
+  * Honors: Magna Cum Laude, Phi Beta Kappa, nominated for Sigma Xi
+
+* Visiting Student, Oxford University, 2018-2019
+  * GPA: 4.0 (converted)
+  * Focus: Physics and Philosophy
 
 Work experience
 ======
-* 2019-Present: Researcher, Climate and Development Lab at Brown University
-  * Led multiple research teams on projects relating to the politics and social science of climate change in the United States.
-  * Contributed to multiple academic papers, public reports, and talks to both scholarly and public audiences
-  * Leading a grant-funded project to analyze patterns of support and opposition for climate and clean energy policies across \~2 dozen state legislatures.
+* March 2020 - July 2023: Researcher (Full-time)
+  * Climate and Development Lab, Brown University
+  * Supervisor: Professor Timmons Roberts
 
-* Summer 2018: Research Assistant in applied ethics for Professor Lucas Stanczyk, Harvard University
-  * Reviewed the scientific and philosophical literature on solar radiation management; compiled a series of arguments for and against its further research.
+* July 2019 - March 2020: Researcher (Part-time)
+  * Climate and Development Lab, Brown University
+  * Supervisor: Professor Timmons Roberts
 
-* 2016-2017: Research Assistant, Brown University Graphics Lab
-  
-Skills
-======
-* Programming languages: Python, R, C#/XAML, Java, Javascript
+* June 2018 - September 2018: Researcher (Part-time)
+  * The Ethics of Geoengineering Project
+  * Harvard University
+  * Supervisor: Professor Lucas Stanczyk
+
+* March 2017 - March 2018: Researcher/Software Developer (Full-time)
+  * Brown Graphics Lab
+  * Brown University
+  * Supervisor: Professor Andy Van Dam
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
-  <ul>{% for post in site.talks %}
+  <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
-Teaching
+
+Grants
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* NSF Graduate Research Fellowship (2023)
+  * Amount: $147,000
+  * Fellowship funding three years of graduate school stipend and tuition
+
+* CSSN Research Grant (2021)
+  * Amount: $26,000
+  * PI: Galen Hall
+  * Coauthors: Joshua Basseches (University of Michigan), Rebecca Bromley-Trujillo (Christopher Newport University)
+  * Project: Research on climate policy and interest groups at the state level
+  * Funding source: Climate Social Science Network (www.cssn.org)
+
+* Brown University SPRINT award (2020)
+  * Amount: $2,000
+  * PI: Baylor Fox-Kemper
+  * Project: Summer research extending undergraduate thesis results and preparing for academic article submission
+
+Media Publications
 ======
-* 
+* The faulty science, doomism, and flawed conclusions of Deep Adaptation (2020)
+  * Published in OpenDemocracy
+  * Co-authors: Thomas Nicholas and Colleen Schmidt
+  * Critical response to "Deep Adaptation: A Map for Navigating Climate Tragedy"
+  * Featured in The New York Times
