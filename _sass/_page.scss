@@ -11,6 +11,16 @@
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
+  @include breakpoint($large) {
+    background: $card-bg;
+    border: 1px solid $card-border;
+    border-radius: $card-radius;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    padding: 1.5em 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
@@ -53,6 +63,11 @@
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  .section-tile h2 {
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 0.4em;
   }
 
   p, li, dl {
@@ -398,4 +413,270 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+/*
+   Tiled card system
+   ========================================================================== */
+
+.card {
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  padding: 1.25em 1.5em;
+  margin-bottom: 1em;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: $card-shadow-hover;
+  }
+
+  &--flat {
+    box-shadow: none;
+    border: 1px solid $card-border;
+
+    &:hover {
+      box-shadow: $card-shadow;
+    }
+  }
+}
+
+.card-compact {
+  padding: 0.8em 1.1em;
+  margin-bottom: 0.6em;
+}
+
+/* Section tiles — the outer containers that hold groups of cards */
+.section-tile {
+  background: $section-bg;
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+  padding: 1.5em;
+  margin-bottom: 1.75em;
+
+  > h2:first-child,
+  > h1:first-child {
+    margin-top: 0;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid $primary-color;
+    margin-bottom: 0.75em;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.section-tile--alt {
+  background: $section-bg-alt;
+}
+
+/* CV-specific card items */
+.cv-entry {
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  padding: 1em 1.25em;
+  margin-bottom: 0.75em;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: $card-shadow-hover;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .cv-entry__meta {
+    color: $gray;
+    font-size: $type-size-6;
+    margin-bottom: 0.3em;
+  }
+
+  .cv-entry__details {
+    font-size: $type-size-6;
+    color: $dark-gray;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 0.15em;
+      padding-left: 0.8em;
+      position: relative;
+
+      &:before {
+        content: "\2022";
+        color: $primary-color;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+
+/* Publication & talk cards in archive lists */
+.archive-card {
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  padding: 1em 1.25em;
+  margin-bottom: 0.75em;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    box-shadow: $card-shadow-hover;
+    border-color: darken($card-border, 8%);
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0.15em;
+    font-size: 1em;
+    border-bottom: none;
+  }
+
+  .archive__item-excerpt,
+  .page__meta {
+    margin-bottom: 0.1em;
+  }
+
+  p {
+    margin-bottom: 0.3em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* About page bio card */
+.bio-card {
+  background: $section-bg;
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+  padding: 1.75em 2em;
+  box-shadow: $card-shadow;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Badge/tag for status indicators */
+.badge {
+  display: inline-block;
+  font-size: $type-size-7;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  vertical-align: middle;
+
+  &--wip {
+    background: mix(#fff, $primary-color, 80%);
+    color: darken($primary-color, 10%);
+    border: 1px solid mix(#fff, $primary-color, 60%);
+  }
+
+  &--published {
+    background: mix(#fff, $primary-color, 90%);
+    color: $primary-color;
+    border: 1px solid mix(#fff, $primary-color, 70%);
+  }
+}
+
+/* Grant card amount highlight */
+.grant-amount {
+  display: inline-block;
+  font-weight: 600;
+  color: $primary-color;
+  font-size: $type-size-6;
+}
+
+/* Publication citation list */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: pub-counter;
+}
+
+.pub-entry {
+  position: relative;
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-left: 3px solid $primary-color;
+  border-radius: 0 $card-radius $card-radius 0;
+  padding: 0.7em 1em;
+  margin-bottom: 0.6em;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    box-shadow: $card-shadow-hover;
+    border-left-color: darken($primary-color, 10%);
+  }
+
+  &--wip {
+    border-left-color: mix($primary-color, #f0c040, 50%);
+
+    &:hover {
+      border-left-color: mix(darken($primary-color, 10%), #e0a020, 50%);
+    }
+  }
+}
+
+.pub-entry__citation {
+  font-size: $type-size-6;
+  line-height: 1.5;
+  color: $dark-gray;
+}
+
+.pub-entry__links {
+  display: inline;
+  margin-left: 0.4em;
+  white-space: nowrap;
+}
+
+.pub-link {
+  display: inline-block;
+  font-size: $type-size-7;
+  font-weight: 600;
+  text-decoration: none !important;
+  padding: 0.15em 0.45em;
+  border-radius: 3px;
+  margin-left: 0.15em;
+  background: mix(#fff, $primary-color, 85%);
+  color: darken($primary-color, 8%) !important;
+  border: 1px solid mix(#fff, $primary-color, 70%);
+  transition: background 0.15s ease, color 0.15s ease;
+  vertical-align: baseline;
+
+  &:hover {
+    background: mix(#fff, $primary-color, 70%);
+    color: darken($primary-color, 15%) !important;
+  }
+
+  i {
+    margin-right: 0.15em;
+  }
+}
+
+.pub-entry__abstract {
+  font-size: $type-size-7;
+  color: $gray;
+  margin: 0.4em 0 0 0;
+  font-style: italic;
+  line-height: 1.4;
 }

@@ -3,10 +3,12 @@ permalink: /
 title: "About me"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
+
+<div class="bio-card" markdown="1">
 
 I am a third year PhD student jointly between Physics and Sociology at the University of Michigan. If that sounds weird, ask me about it! My two wonderful advisors are Elizabeth Bruch and Mark Newman.
 
@@ -15,3 +17,5 @@ I often label myself as a computational social scientist working in the complexi
 I also build [InCite](https://inciteref.com), a tool that recommends citations from your personal library as you write.
 
 In my spare time I love oil painting, reading sci-fi and history books, learning to cook, and rock climbing, running, or biking as much as possible.
+
+</div>

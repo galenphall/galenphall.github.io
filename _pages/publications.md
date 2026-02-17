@@ -11,18 +11,28 @@ author_profile: true
 
 {% include base_path %}
 
-## Working Papers
+<div class="section-tile">
+<h2>Working Papers</h2>
 
+<ol class="pub-list" reversed>
 {% for post in site.publications reversed %}
   {% if post.wip %}
-    {% include archive-single.html %}
+    {% include archive-single-pub.html %}
   {% endif %}
 {% endfor %}
+</ol>
 
-## Published
+</div>
 
+<div class="section-tile section-tile--alt">
+<h2>Published</h2>
+
+<ol class="pub-list" reversed>
 {% for post in site.publications reversed %}
   {% unless post.wip %}
-    {% include archive-single.html %}
+    {% include archive-single-pub.html %}
   {% endunless %}
 {% endfor %}
+</ol>
+
+</div>

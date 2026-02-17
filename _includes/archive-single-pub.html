@@ -1,0 +1,18 @@
+{% include base_path %}
+
+{% assign cite_text = post.citation | replace: post.venue, '<i>' | append: '' %}
+{% assign venue_end = post.venue | append: '' %}
+{% assign cite_with_italic = post.citation | replace: post.venue, '<i>VEN_PLACEHOLDER</i>' | replace: 'VEN_PLACEHOLDER', post.venue %}
+
+<li class="pub-entry{% if post.wip %} pub-entry--wip{% endif %}">
+  <span class="pub-entry__citation">{{ cite_with_italic }}</span>
+  {% if post.paperurl or post.content != '' %}
+  <span class="pub-entry__links">
+    {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" class="pub-link pub-link--paper" title="Access paper">Paper</a>{% endif %}
+    {% if post.content contains 'howdotheylobby' %}<a href="https://howdotheylobby.org" target="_blank" class="pub-link" title="Associated website">Website</a>{% endif %}
+  </span>
+  {% endif %}
+  {% if post.wip and post.excerpt and post.excerpt != '' %}
+  <p class="pub-entry__abstract">{{ post.excerpt | strip_html | strip }}</p>
+  {% endif %}
+</li>

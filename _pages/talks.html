@@ -11,6 +11,13 @@ author_profile: true
 
 {% endif %}
 
+<div class="section-tile">
+<h2>Presentations</h2>
+
+<ol class="pub-list" reversed>
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% include archive-single-talk-cv.html %}
 {% endfor %}
+</ol>
+
+</div>
