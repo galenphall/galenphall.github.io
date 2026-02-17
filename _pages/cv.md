@@ -44,10 +44,20 @@ Work experience
   * Brown University
   * Supervisor: Professor Andy Van Dam
 
+Working Papers
+======
+  <ul>{% for post in site.publications reversed %}
+    {% if post.wip %}
+      {% include archive-single-cv.html %}
+    {% endif %}
+  {% endfor %}</ul>
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
+    {% unless post.wip %}
+      {% include archive-single-cv.html %}
+    {% endunless %}
   {% endfor %}</ul>
 
 Talks

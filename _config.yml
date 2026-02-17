@@ -82,14 +82,14 @@ analytics:
 author:
   name             : "Galen Hall"
   avatar           : "portrait.png"
-  bio              : "Physics and Sociology joint PhD student at the University of Michigan."
+  bio              : "Physics and Sociology joint PhD student at the University of Michigan. Builder of InCite."
   location         : "New York, NY"
   employer         : "University of Michigan"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YLZ5w-cAAAAJ&hl=en"
   email            : "galenh [at] umich.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://inciteref.com"
   bitbucket        :
   codepen          :
   dribbble         :
