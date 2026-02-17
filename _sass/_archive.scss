@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .archive {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 
   @include breakpoint($medium) {
     @include span(12 of 12);
@@ -15,7 +15,7 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover {
       text-decoration: underline;
@@ -40,8 +40,8 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  margin-bottom: 0.2em;
+  font-family: $header-font-family;
 
   a + a {
     opacity: 0.5;
